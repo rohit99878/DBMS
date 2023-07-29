@@ -1,0 +1,35 @@
+*Agenda
+    -Introduction to DBMS
+    -What is SQL
+    -MySQL Introduction
+    -Create Database
+    -Create Table
+    -Insert and Select
+
+RDBMS -> Relational Database Management System
+
+SQL Queries -> Structured Query Language
+
+*MySQL -
+    It was developed by Micheal Wideneus in 1995.
+    MySQL name originated from his daughters name-Myia
+    In 2008 Sun microsystems took over this MySQL
+    In 2010 Oracle took over sun microsystems and thats why
+    MySQL was awarded as Database of the year in 2019
+
+*Go at this Particular Location
+C:\ProgramData\MySQL\MySQL Server 8.0\bin
+C:\ProgramFiles\MySQL\MySQL Server 8.0\bin
+
+mysqld.exe -> Mysql Sever -> Running on port 3306
+mysql.exe -> Client -> it is going to talk with your Mysql Server
+
+*Connect to MySQL Server
+
+    **mysql -u root -h localhost -p
+    mysql -> mysql.exe -> Client
+    -u -> user
+    root -> username
+    -h -> host
+    localhost -> hostname/127.56.0.98
+    -p -> password
