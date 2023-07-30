@@ -1,0 +1,52 @@
+* Agenda
+    SQL Categories
+    SQL Scripts
+    Datatypes in SQL
+    Difference between char,varchar,text
+    DQL Commands
+
+
+*SQL Categories
+    1. DDL -> Data defination Language -> Create,Alter,drop,Rename
+    2. DML -> Data Manipulation Language -> Insert, Update, Delete
+    3. DQL -> Data Query Language -> Select
+    4. DCL -> Data COntrol Language -> Create User, Grant, Revoke
+    5. TCL -> Transaction control Language -> Savepoint, commit,rollback
+
+* Datatypes
+    1. Numeric Type
+        tinyint(1 byte)
+        mediumint(2 bytes)
+        int (4 bytes)
+        bigint(8 bytes)
+        float (4 bytes)
+        double (8 bytes)
+        Decimal(m,n) -> exact precision
+            m-> no of digits
+            n-> no of digits after decimal point
+            eg. Decimal(4,2); -> 12.34
+    
+    2. String Type
+        CHAR(n) -> n - no of characters
+        VARCHAR(n) -> n -no of characters
+        tinyText(255)
+        Text(64k)
+        mediumText(16MB)
+        longText(4GB)
+
+    3. Binary
+        BLOB, Medium BLOB
+
+    4. Misc Types 
+        Enum (Bike,Car,Truck)
+        SET (Bike,Car,Truck,Auto)
+
+    5. DateTime Types
+        Date - yyyy-mm-dd  (1-1-1000 to 31-12-9999)
+        Time - hr::min:sec (839) -> 839:59:32
+        DateTime - yyyy-mm-dd hr::min:sec (1-1-1000 to 31-12-9999)
+                                            (00:00:00 to 23:59:59)
+        Year - 1901-2155
+    
+*SQL Scripts -> .sql Files
+    These files contains queries in list manner
