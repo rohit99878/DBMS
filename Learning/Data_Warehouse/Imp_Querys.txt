@@ -1,0 +1,32 @@
+
+1.This query is use for find second or third higgest salary
+
+select * from GFG_salary where emp_an_salary in
+(select emp_an_salary from GFG_salary order by emp_an_salary desc limit 3)
+order by emp_an_salary asc limit 1;
+
+
+2.table dept;
+
+alter table dept add column salary int;
+
+update dept set salary = 10000 where dept_id = 1;
+update dept set salary = 20000 where dept_id = 2;
+update dept set salary = 25000 where dept_id = 3;
+update dept set salary = 30000 where dept_id = 4;
+update dept set salary = 30000 where dept_id = 5;
+update dept set salary = 15000 where dept_id = 6;
+
+
+delete from dept where dept_id = 7 ;
+delete from dept where dept_id = 8 ;
+
+select salary,dept_name from dept where salary in (select min(salary) from dept group by dept_name order by dept_name desc limit 2) order by salary limit 1;
+
+select dept_name, salary from ( select dept_name,salary,dense_rank() over(partition by dept_name order by salary) as rank from dept) 
+as x 
+ where x.rank=1;
+ 
+select manager,salary from (select manager,salary,dense_rank() over(order by salary) as rank from dept) as x where x.rank  3;
+
+select salary,manager from dept order by salary desc;
